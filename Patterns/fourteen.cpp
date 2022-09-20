@@ -1,9 +1,9 @@
 /*
-1 
-2 3
-4 5 6
-7 8 9 10
-11 12 13 14 15
+A
+A B
+A B C 
+A B C D
+A B C D E
 */
 
 #include<iostream>
@@ -14,11 +14,11 @@ int main(){
     cout<<"Enter number of rows : ";
     cin >>m;
 
-    int count=1;
     for(int i=1;i<=m;i++){
+        char temp= 'A';
         for(int j=1;j<=i;j++){
-           cout<<count<<" ";
-           count++;
+           cout<<temp<<" ";
+           temp +=1;
         }
         cout<<endl;
     }
